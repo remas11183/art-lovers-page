@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+	<title> Art Lovers Page</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+	<div class="menu" id="mymenu">
+		<div>
+			<button class="icon" onclick="myfunction()">
+				<i class="fa fa-bars"></i>
+			<script src="webicon.js"></script>
+			</button>
+		</div>
+		<ul>
+			<li><a href="#top">الصفحة الرئيسة</a></li>
+			<li><a href="#history">التاريخ</a></li>
+			<li><a href="#gallery">المعرض</a></li>
+			<li><a href="#about">نبذة</a></li>
+			<li><a href="contact-form.html" target="_blank">اتصل بنا</a></li>
+		</ul>
+	</div>
+
+	<div class="main">
+		<h1> 🎨 الفن التشكيلي يجسّد المشاعر ويرسم الحكايات </h1>
+		<p>الفن مو بس رسمة على لوحة... هو وسيلة للتعبير عن الذات، عن الثقافة، وعن قضايا المجتمع بطريقة إبداعية تجذب العين وتحرك الإحساس.</p>
+		
+		<h2 id="history">التاريخ</h2>
+		<p>نشأ الفن التشكيلي منذ آلاف السنين، بدءًا من النقوش الحجرية القديمة، إلى اللوحات الكلاسيكية في العصور الوسطى، وصولاً للفن المعاصر والتجريدي.</br>
+		مرّ بمراحل كثيرة تأثرت بالحضارات، من الفرعونية، للبيزنطية، للعربية والإسلامية.</br>
+		واليوم، صار الفن التشكيلي يعكس الهوية الشخصية والتقنيات الرقمية.</p>
+	</div>
+
+	<!-- المعرض -->
+	<div class="photos">
+		<h2 id="gallery"> المعرض</h2>
+		
+		<div class="gallery">
+			<div class="art-piece">
+			  <img src="../img/frida.jpg" alt="لوحة فريدا كاهلو">
+			  <p>فريدا كاهلو</p>
+			</div>
+			<div class="art-piece">
+			  <img src="../img/goya.jpg" alt="رسمة فرانثيسكو دي غويا">
+			  <p>فرانثيسكو دي غويا</p>
+			</div>
+			<div class="art-piece">
+			  <img src="../img/roses.jpg" alt="لوحة زهور فان جوخ">
+			  <p>زهور فان جوخ</p>
+			</div>
+			<div class="art-piece">
+			  <img src="../img/starrynight.jpg" alt="النجمة المتلألئة - فان جوخ">
+			  <p>النجمة المتلألئة</p>
+			</div>
+			<div class="art-piece">
+			  <img src="../img/artclass.jpg" alt="فصل فني للأطفال">
+			  <p>فصل فني للأطفال</p>
+			</div>
+			  <!-- مقطع فيديو عن الفن -->
+<!-- فيديو وثائقي عن الفن التشكيلي -->
+<div class="video-wrapper">
+	<!-- زر المشاركة -->
+<button class="share-button" onclick="shareVideo()">
+	📤 شارك مع أصدقائك
+  </button>
+  
+	<h3>شاهد نظرة رائعة وثائقي عن تاريخ الفن التشكيلي! 🎥🎬</h3>
+	<iframe class="responsive-video" src="https://www.youtube.com/embed/un_Rt57pt1M"
+	  title="وثائقي عن الفن التشكيلي" frameborder="0"
+	  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	  allowfullscreen></iframe>
+  
+	<p style="margin-top: 15px; font-size: 16px; color: #555;">
+	  هذا الفيديو يستعرض تطوّر الفن التشكيلي عبر العصور، ويأخذنا في رحلة بصرية ممتعة من أصول الفن حتى العصر الحديث.
+	  <br>
+	  <em style="color:#b85c5c;">Documentary: The Evolution of Fine Arts Through Time</em>
+	</p>
+  </div>
+  
+  
+  
+  
+
+	<div class="thefooter">
+		<h2 id="about"> نبذة</h2>
+		<p>في هذي الصفحة، نشارك إبداعات الفنانين، ونتناقش في أساليبهم وتفاصيل لوحاتهم.</br>
+		إذا كنتِ تحبين الرسم أو مهتمة بالفن، تعالي نتواصل ونشارك أفكارنا، ونضيف لوحاتك الجميلة للمعرض!</p>
+
+		<h2>معلومات مفيدة</h2>
+		<ul>
+			<li><a href="mailto:info@example.com">info@example.com</a></li>
+			<li><a href="https://mathaf.org.qa/" target="_blank">متحف الفن العربي الحديث</a></li>
+			<li><a href="https://artsandculture.google.com/" target="_blank">Google Arts & Culture</a></li>
+		</ul>
+		
+	</div>
+	<script>
+		function shareVideo() {
+		  const videoURL = "https://www.youtube.com/watch?v=un_Rt57pt1M";
+		  
+		  if (navigator.share) {
+			navigator.share({
+			  title: "وثائقي عن الفن التشكيلي",
+			  url: videoURL
+			}).then(() => {
+			  console.log("تمت المشاركة!");
+			}).catch((error) => {
+			  alert("تعذر المشاركة. جرب تنسخ الرابط يدويًا 📋");
+			});
+		  } else {
+			navigator.clipboard.writeText(videoURL);
+			alert("تم نسخ رابط الفيديو! 📋 أرسله لأصحابك الآن ✨");
+		  }
+		}
+	  </script>
+	  
+</body>
+
+</html>
+
+
+  
+
+
+

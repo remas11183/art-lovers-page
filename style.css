@@ -1,0 +1,235 @@
+/* إعدادات عامة للصفحة */
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-color: #fff7f2;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: center;
+  color: #333;
+}
+
+/* تنسيق قائمة التنقل */
+#menu {
+  background-color: #e5a3a3;
+  padding: 50px;
+  border-bottom: 2px solid #e0bfb8;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #f8c8c8; /* أسود غامق */
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #4d2c2c;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#menu ul li a:hover {
+  color: #c52d2f;
+}
+
+/* قسم المحتوى الرئيسي */
+.main {
+  padding: 30px 20px;
+}
+
+h1 {
+  color: #c52d2f;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #b85c5c;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* قسم المعرض */
+.photos {
+  padding: 20px;
+  background-color: #fff2ed;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.art-piece {
+  width: 200px;
+  background-color: #fadfdf;
+  padding: 10px;
+  border: 1px solid #ccacac;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.art-piece img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.art-piece p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* قسم النبذة */
+.thefooter {
+  background-color: #fceee9;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.thefooter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.thefooter li {
+  margin: 10px 0;
+}
+
+.thefooter a {
+  color: #b85c5c;
+  text-decoration: none;
+}
+
+.thefooter a:hover {
+  text-decoration: underline;
+}
+/* تنسيق الشريط العلوي */
+.menu {
+  background-color: 
+  #dab6b6;
+  box-shadow: 0 2px 5px rgb(76, 58, 58);
+  padding: 25px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #a16363;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ff5252;
+}
+/* نخلي الزر في الزاوية */
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #232222; /* لون الخط */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* تنسيق قسم الفيديو */
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #edeae9; /* خلفية ناعمة بدل الأبيض الفاقع */
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.video-title {
+  color: #b85c5c;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.responsive-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-desc {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #5e4c4c;
+  padding: 0 10px;
+}
+.share-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c52d2f;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+  background-color: #a92426;
+}
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f6e7e7; /* ← خلفية ناعمة مائلة للخوخي */
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+
+
